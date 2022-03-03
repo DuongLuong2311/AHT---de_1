@@ -1,0 +1,39 @@
+.featured-items{
+    padding:  65px 0;
+
+    &_group {
+
+        .title{
+            @include title(5%);
+        }
+        &_row{
+
+            
+            
+        }
+    }
+}
+
+.product{
+    @include col(25%);
+
+    p{
+
+    }
+
+    .rating{
+
+    }
+
+    .price{
+
+
+        &_current{
+
+        }
+
+        &_sale{
+            
+        }
+    }
+}

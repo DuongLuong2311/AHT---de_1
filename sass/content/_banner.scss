@@ -1,0 +1,21 @@
+.banner{
+    
+    .banner-col{
+        margin: -15px 0;
+    }
+
+    &-left{
+        @include col(66%);
+        position: relative;
+    }
+
+    &-right{
+        @include col(33%);
+
+        .banner-child{
+            padding: 15px 0;
+        }
+
+    }
+}
+

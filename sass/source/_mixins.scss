@@ -1,0 +1,38 @@
+@mixin col($number) {
+    width: $number;
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin: 15px 0;
+}
+
+@mixin btn($bg-color, $text-color) {
+    width: 118px;
+    height: 40px;
+    background-color: $bg-color;
+    color: $text-color;
+}
+
+
+@mixin title($hr-width){
+    h4{
+        margin: 0 0 10px 0;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 0.875rem;
+        color: $text-violet;
+    }
+
+    h2{
+        margin: 10px 0 15px 0;
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+    }
+
+    hr{
+        margin: 15px 0;
+        border: 1px solid $text-violet;
+        width: $hr-width;
+    }
+}

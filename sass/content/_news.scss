@@ -1,0 +1,120 @@
+.news {
+    // background-image: url('../../img/bg-news.png');
+    position: relative;
+    height: 75.268vh;
+    padding-top:15px;
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.2;
+    }
+
+    .title{
+        position: absolute;
+        text-align: center;
+        padding: 15px;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%); 
+        @include title(20%);
+        hr{
+            width: 20%;
+            margin: auto;
+        }
+    }
+
+    .slider{
+        position: absolute;
+        top: 27.5%;
+        left: 20%;
+        transform: translateX(0%);
+        display: flex;
+
+        .slick-arrow{
+            
+        }
+
+        .slick-prev{
+
+        }
+
+        .slick-next{
+
+        }
+
+        &-item{
+            width: 360px;
+            background-color: $text-white; 
+            margin: 15px;
+
+            .news-img{
+                position: relative;
+
+                img{
+                    object-fit: cover;
+                    height:200px;
+                    opacity: 1;
+                }
+
+                .news-date{
+                    position: absolute;
+                    padding: 5px;
+                    top: 0;
+                    margin: 22px 20px;
+                    background-color: #a1d1dd;
+
+                    .date{
+                        width: 50px;
+                        height: 50px;
+                        color: $text-white;
+                        font-weight: 700;                        
+                        text-align: center;
+                        border: 1px solid $text-white;
+                        p{
+                            margin: 6px;
+
+                        }
+                    }
+                }
+            }
+
+            .slider-content{
+                padding: 20px;
+                
+                .slider-title{
+                    margin-bottom: 25px;
+                    font-weight: 600;
+                }
+    
+                .details{
+                    font-family: 'Open Sans';
+                    font-size: 14px;
+                }
+            }
+
+            .react-btn{
+
+                border-top: 1px solid $text-gray;
+                display: flex;
+                padding:20px;
+                color: $text-gray;
+
+                .comment{
+
+                }
+
+                .like{
+                    margin: 0 20px;
+                }
+            }
+
+            &:hover{
+                h4{
+                    color: $text-violet;
+                }
+            }
+        }
+    }
+}

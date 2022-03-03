@@ -1,0 +1,58 @@
+// Header - Page Settings 
+.header{
+    margin-bottom: 15px;
+    .page-setting{
+        padding: 15px 15px;
+        background-color: #222;
+        display: flex;
+        color: $text-page-settings;
+        justify-content: space-between;
+    
+    
+        .ps{
+            display: flex;
+            margin: 0 15px; 
+            padding: 0 -15px;
+            font-size: 0.875rem;
+    
+            .ps-config{
+                padding: 0 15px;
+            }
+        }
+    }
+    
+    
+    
+    // Nav Bar
+    .navbar{
+        display: flex;
+        padding: 20px 15px; 
+        align-items: center;
+        justify-content: space-between;
+        text-transform: uppercase;
+    
+        img{
+            margin: 0 15px;
+        }
+    
+        .nav-link{
+            display: flex;
+            align-items: center;
+            padding: 0 -28.5px;
+            padding-right: 72.5px;
+            font-weight: 700;
+            li{
+                margin: 0 28.5px;
+            }
+        }
+    
+        .control-items{
+            padding: -15px;
+            margin: 0 15px;
+
+            a{
+                margin: 15px;
+            }
+        }
+    }
+}

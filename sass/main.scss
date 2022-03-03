@@ -1,0 +1,22 @@
+@import './source/valiables';
+@import './source/typography';
+@import './source/mixins';
+
+
+
+@import './base/default';
+@import './base/header';
+@import './base/footer';
+
+//Content
+@import './content/banner';
+@import './content/feature_items';
+@import './content/news';
+
+
+//Slick SASS
+@import './slick-css/slick.scss';
+@import './slick-css/slick-theme.scss';
+
+
+@import './base/responsive';
