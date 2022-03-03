@@ -7,6 +7,24 @@
     &-left{
         @include col(66%);
         position: relative;
+
+
+        .banner-left-content{
+            position: absolute;
+            right: 13%;
+            bottom: 29.5%;
+
+            p{
+                font-size:30px;
+                font-family: 'Pacifico';
+                font-weight: 700;
+            }
+
+            .btn-link{
+                margin: 0 0 0 67%;
+            }
+
+        }
     }
 
     &-right{
@@ -14,8 +32,60 @@
 
         .banner-child{
             padding: 15px 0;
+            position: relative;
+
+
+            .banner-right-content_1{
+                position: absolute;
+                top: 45%;
+                left: 15%;
+
+                span{
+                    text-transform: uppercase;
+                    color: #616161;
+                    letter-spacing: 3px;
+                    font-weight: 500;
+                }
+
+                p{
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+
+            }
+            .banner-right-content_2{
+                position:absolute;
+                top: 37%;
+                left: 15%;
+                span{
+                    text-transform: uppercase;
+                    color: #616161;
+                    letter-spacing: 3px;
+                    font-weight: 500;
+                }
+
+                p{
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin: 0 0 20px 0;
+                }
+
+                .btn-link{
+                    
+                }
+
+                
+            }
         }
 
     }
 }
 
+
+
+.btn-link{
+    @include button-primary($text-violet, $text-white, 106px);
+    padding: 10px 15px;
+}

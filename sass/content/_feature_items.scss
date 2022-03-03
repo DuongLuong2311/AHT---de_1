@@ -8,6 +8,7 @@
         }
         &_row{
 
+
             
             
         }
@@ -17,23 +18,47 @@
 .product{
     @include col(25%);
 
-    p{
-
+    &_img{
+        position: relative;
+        margin: 0 0 15px 0;
+        .btn-add-to-cart{
+            @include button-primary($text-white, $btn-atc, 118px );
+            position: absolute;
+            bottom: 9px;
+            left: 5px;
+            &:hover{
+                color: $text-violet;
+            }
+            
+        }
     }
+
+    &-name{
+        margin: 5px 0;
+        font-weight: 700;
+    }
+
+
 
     .rating{
-
-    }
-
-    .price{
-
-
-        &_current{
+        margin: 5px 0;
+        color: #d1d1d1;
+        .checked{
+            color: #f8ba04;
 
         }
+    }
+ 
+    .price{
 
-        &_sale{
-            
+        &-current{
+            text-decoration: line-through;
+            color: $text-price;
+        }
+
+        &-sale{
+            color: $text-violet;
+            font-weight: 700;
         }
     }
 }

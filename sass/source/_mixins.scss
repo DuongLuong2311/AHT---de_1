@@ -36,3 +36,12 @@
         width: $hr-width;
     }
 }
+
+@mixin button-primary($bg-color, $text-color,$width){
+    background-color: $bg-color;
+    color: $text-color;
+    width: $width;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+}
