@@ -45,3 +45,11 @@
     text-align: center;
     font-size: 14px;
 }
+
+@mixin transformer($scale) {
+    transform: $scale;
+    -webkit-transform: $scale;
+    -moz-transform:$scale;
+    -ms-transform: $scale;
+    -o-transform: $scale;
+}

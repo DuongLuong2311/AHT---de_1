@@ -60,3 +60,10 @@ p{
     flex-wrap: wrap;
     margin: 0 -15px;
 }
+
+
+.row_2{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));    
+    margin: 0 -15px;
+}

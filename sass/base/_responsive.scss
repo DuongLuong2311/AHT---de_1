@@ -1,0 +1,285 @@
+@media all and (max-width:1465px){
+
+
+    .header{
+
+
+        .page-setting{
+            display: none;
+            
+        }
+
+
+        .navbar{
+
+            .nav-link{
+                display: none;
+            }
+
+            .control-items{
+                display: none;
+
+            }
+
+            .nav-hamburger{
+                display: block;
+                color: #000000;
+            }
+
+            .navbar-mobile{
+                display: block;
+            }
+
+            
+            .active{
+                @include transformer(translateX(0));
+            }
+        }
+
+
+    }
+
+    
+
+
+
+
+}
+
+@media all and (max-width:1180px){
+
+    .navbar-mobile{
+        margin: 0;
+    }
+
+
+    .featured-items{
+        width: 100%;
+        padding: 50px 16%;
+
+        .row_2{
+            grid-template-columns: repeat(3, minmax(0, 1fr));    
+            grid-gap: 15px;
+            .product{
+                @include col(81%);
+
+                
+            }
+        }
+    }
+    
+    .footer{
+        .navbar-mobile-content{
+            
+
+            .control-items-mobile{
+                width: 40%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        .footer-copyright{
+            padding: 30px 0;
+
+            span{
+                display: block;
+            }
+
+            .payment{
+                display: none;
+            }
+            
+        }
+    }
+
+}
+
+@media all and (max-width:1140px){
+
+    .banner{
+
+
+        &-left{
+            margin: 0 auto;
+            width: 100%;
+            padding: 0;
+            box-sizing: border-box;
+
+            img{
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+
+        &-right{
+            display: none;
+
+        }
+
+    }
+
+    
+}
+
+@media all and (max-width:1024px){
+    
+    .featured-items{
+        margin: 0 auto;
+
+        
+        .row_2{
+            grid-template-columns: repeat(2, minmax(0, 1fr));    
+           
+        }
+    }
+
+
+    .news{
+
+
+        .title{
+            top: 30px;
+
+        }
+
+        .slider{
+            top: 24.5%;
+
+        }
+    }
+
+    
+
+    .footer{
+
+        .container{
+            margin: 0;
+        }
+
+        .footer-main-group{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            .container{
+                padding: 0;
+            }
+    
+            .about,
+            .navigation,
+            .contact{
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media all and (max-width:768px){
+    .featured-items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0 15px;
+
+        
+
+
+        .row_2{
+            grid-template-columns: repeat(2, minmax(0, 1fr));    
+           
+        }
+    }
+
+    .slider{
+        top: 10%;
+
+    }
+
+    .navbar-mobile{
+
+
+
+        .config-mobile{
+            
+            flex-direction: column;
+            
+            .bookmark{
+                margin: 20px 0
+            }
+
+            .setting{
+
+                a{
+                    margin: 0 10px 0 0 ;
+                }
+            }
+
+        }
+    }
+}
+
+@media all and (max-width:576px){
+    .featured-items{
+
+        .row_2{
+            grid-template-columns: repeat(1, minmax(0, 1fr));    
+           
+        }
+    }
+}
+
+@media all and (max-width:375px){
+
+    .banner{
+        .banner-left-content{
+            
+            p{
+                font-size:24px;
+            }
+
+            .btn-link{
+                margin: 0 0 0 57%;
+            }
+        }
+    }
+
+    .news{
+
+
+        .slider{
+
+            &-item{
+               &-content{
+
+
+                .slider-details{
+                    display: none;
+                }
+               }
+            }
+        }
+    }
+
+    .footer{
+
+
+        .footer-copyright{
+            padding: 30px 0;
+            font-size: 12px;
+            span{
+                display: block;
+                margin: 0 auto;
+            }
+
+            .payment{
+                display: none;
+            }
+            
+        }
+    }
+}

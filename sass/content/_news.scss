@@ -3,6 +3,8 @@
     position: relative;
     height: 75.268vh;
     padding-top:15px;
+    overflow: hidden;
+    box-sizing: border-box;
 
     img{
         width: 100%;
@@ -29,25 +31,31 @@
         position: absolute;
         top: 27.5%;
         left: 20%;
-        transform: translateX(0%);
+        right : 20%;
         display: flex;
 
-        .slick-arrow{
+        .slick-dots{
             
-        }
 
-        .slick-prev{
-            
-        }
+            li{
+                button{
+                    &:before{
+                        
+                        background-color: $text-violet;
+                        border-radius: 50%;
+                        width:7px;
+                        height: 7px;
 
-        .slick-next{
+                    }
+                }
+            }
 
         }
 
         &-item{
             width: 360px;
             background-color: $text-white; 
-            margin: 15px;
+            margin: 0 15px;
 
             .news-img{
                 position: relative;

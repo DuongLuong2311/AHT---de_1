@@ -1,15 +1,16 @@
 // Header - Page Settings 
 .header{
-    
     margin-bottom: 15px;
+    box-sizing: border-box;
+    width: 100%;
 
+    
     .page-setting{
+        display: flex;
+        justify-content: space-between;
         padding: 15px 15px;
         background-color: #222;
-        display: flex;
         color: $text-page-settings;
-        justify-content: space-between;
-    
     
         .ps{
             display: flex;
@@ -19,6 +20,9 @@
     
             .ps-config{
                 padding: 0 15px;
+                span{
+                    margin: 0 5px;
+                }
             }
         }
     }
@@ -56,5 +60,108 @@
                 margin: 15px;
             }
         }
+
+
+        .nav-hamburger{
+            display:none;
+            
+            .search{
+                margin: 0 20px;
+            }
+        }
+
+
+    // Mobile
+    .navbar-mobile{
+        display: none;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background-color: $text-white;
+        top: 0;
+        z-index: 1000;
+        padding: 10% 0;
+        @include transformer(translateX(100%));
+        animation: navbar 1s fade in both ;
+        box-sizing: border-box;
+
+        .navbar-mobile-content{
+            margin: 0 auto;
+            width: 70%;
+
+            .navbar-mobile_menu{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                img{
+                    
+                }
+
+                .exit{
+                    font-size: 30px;
+                }
+            }
+
+
+
+            .navbar-mobile_link{
+                font-size: 16px;
+                text-transform: uppercase;
+                font-weight: 700;
+                text-align: center;
+                margin: 50px 0;
+                
+
+                li{
+                    width: 100%;
+                    padding: 10px 0;
+
+                    &:hover{
+                        background-color: $text-black;
+                        
+                        a{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+
+            .control-items-mobile{
+                text-align: center;
+                margin: 30px;
+            }
+
+            .config-mobile{
+                display: flex;
+                margin: 0 -15px;
+                justify-content: space-between;
+                margin:  10% 0 0 0;
+
+
+                .bookmark{
+                    span{
+                        margin: 0 10px;
+                        font-weight: 600;
+                    }
+                }
+
+                .settings{
+
+                    a{
+                        cursor: pointer;
+                        margin: 0 0 0 10px;
+                    }
+                }
+            }
+        }
+
+        
+
+
     }
+        
+    }
+
+    
 }
