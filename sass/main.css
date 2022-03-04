@@ -172,6 +172,7 @@ p {
 }
 .header .navbar .control-items a {
   margin: 15px;
+  font-size: 27px;
 }
 .header .navbar .nav-hamburger {
   display: none;
@@ -276,6 +277,7 @@ p {
 }
 .footer-main .row .about p {
   font-family: "Open Sans";
+  width: 77%;
   border-top: 1px solid #393939;
   margin: 30px 0 50px 0;
   padding: 30px 0 0 0;
@@ -339,6 +341,9 @@ p {
 }
 .footer-copyright .row {
   justify-content: space-between;
+}
+.footer-copyright .row span {
+  font-size: 14px;
 }
 
 .banner .banner-col {
@@ -418,7 +423,11 @@ p {
 }
 
 .featured-items {
-  padding: 65px 0;
+  padding: 43px 15px;
+  margin: -15px auto;
+}
+.featured-items_group .title {
+  margin: 0 0 12px 0;
 }
 .featured-items_group .title h4 {
   margin: 0 0 10px 0;
@@ -441,7 +450,7 @@ p {
 }
 
 .product {
-  width: 100%;
+  width: 274px;
   padding: 0 15px;
   box-sizing: border-box;
   margin: 15px 0;
@@ -927,10 +936,10 @@ p {
   }
 
   .news .title {
-    top: 30px;
+    top: 15%;
   }
   .news .slider {
-    top: 24.5%;
+    top: 28.5%;
   }
 
   .footer .container {

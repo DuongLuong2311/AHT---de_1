@@ -1,16 +1,17 @@
 .featured-items{
-    padding:  65px 0;
-
+    padding:  43px 15px;
+    margin: -15px auto;
     &_group {
 
         .title{
             @include title(5%);
+            margin: 0 0 12px 0 ;
         }
     }
 }
 
 .product{
-    @include col(100%);
+    @include col(274px);
     &_img{
         position: relative;
         margin: 0 0 15px 0;
