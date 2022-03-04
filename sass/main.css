@@ -897,6 +897,7 @@ p {
   }
   .footer .footer-copyright span {
     display: block;
+    margin: auto;
   }
   .footer .footer-copyright .payment {
     display: none;
