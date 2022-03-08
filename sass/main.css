@@ -609,6 +609,7 @@ p {
 }
 .news .container .slider .slick-dots {
   margin: -30px 0;
+  list-style: none;
 }
 .news .container .slider .slick-dots li button:before {
   background-color: #8262b5;
