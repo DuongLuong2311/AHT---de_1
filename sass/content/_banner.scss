@@ -1,17 +1,19 @@
 .banner{
+    margin: 136px 0 37px 0;
     .banner-col{
         margin: -15px 0;
     }
 
     &-left{
-        @include col(66%);
+        @include col(66.66%);
         position: relative;
 
 
         .banner-left-content{
             position: absolute;
-            right: 13%;
-            bottom: 29.5%;
+            right: 12.75%;
+            bottom: 28%;
+
 
             p{
                 font-size:30px;
@@ -20,14 +22,14 @@
             }
 
             .btn-link{
-                margin: 0 0 0 67%;
+                margin: 0 0 0 65%;
             }
 
         }
     }
 
     &-right{
-        @include col(33%);
+        @include col(33.33%);
 
         .banner-child{
             padding: 15px 0;
@@ -55,8 +57,8 @@
             }
             .banner-right-content_2{
                 position:absolute;
-                top: 37%;
-                left: 15%;
+                top: 37.5%;
+                left: 11%;
                 span{
                     text-transform: uppercase;
                     color: #616161;
@@ -68,11 +70,7 @@
                     text-transform: uppercase;
                     font-size: 20px;
                     font-weight: 700;
-                    margin: 0 0 20px 0;
-                }
-
-                .btn-link{
-                    
+                    margin: 0 0 13px 0;
                 }
 
                 
@@ -86,5 +84,5 @@
 
 .btn-link{
     @include button-primary($text-violet, $text-white, 106px);
-    padding: 10px 15px;
+    padding: 11px 18px;
 }

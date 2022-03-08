@@ -1,38 +1,38 @@
 
 // ------------------------------MONTSERRAT----------------------------------
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../../font/Montserrat/Montserrat-Bold.ttf')format('truetype');
+    font-family: $font-montserrat;
+    src: url('../font/Montserrat/Montserrat-Bold.ttf')format('truetype');
     font-weight:700;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'Montserrat';
+    font-family: $font-montserrat;
     src: url('../../font/Montserrat/Montserrat-SemiBold.ttf')format('truetype');
     font-weight:600;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../../font/Montserrat/Montserrat-Medium.ttf')format('truetype');
+    font-family: $font-montserrat;
+    src: url('../font/Montserrat/Montserrat-Medium.ttf')format('truetype');
     font-weight:500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../../font/Montserrat/Montserrat-Regular.ttf')format('truetype');
+    font-family: $font-montserrat;
+    src: url('../font/Montserrat/Montserrat-Regular.ttf')format('truetype');
     font-weight:400;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../../font/Montserrat/Montserrat-Thin.ttf')format('truetype');
+    font-family: $font-montserrat;
+    src: url('../font/Montserrat/Montserrat-Thin.ttf')format('truetype');
     font-weight:100;
 
 }
@@ -40,8 +40,8 @@
 
 // ------------------------------OPEN SANS----------------------------------
 @font-face {
-    font-family: 'Open Sans';
-    src: url('../../font/OpenSans/OpenSans-Regular.ttf')format('truetype');
+    font-family: $font-open-sans;
+    src: url('../font/OpenSans/OpenSans-Regular.ttf')format('truetype');
     font-weight:400;
     font-style: normal;
 
@@ -51,8 +51,8 @@
 
 // ------------------------------Pacifico----------------------------------
 @font-face{
-    font-family: 'Pacifico';
-    src: url('../../font/Pacifico/Pacifico-Regular.ttf')format('truetype');
+    font-family: $font-pacifico;
+    src: url('../font/Pacifico/Pacifico-Regular.ttf')format('truetype');
     font-weight:400;
     font-style: normal;
 }

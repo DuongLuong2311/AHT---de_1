@@ -16,10 +16,10 @@ $(document).ready(function() {
 
   $('.slider').slick({
     slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
+    slidesToScroll: 3,
+    autoplay: false,
     autoplaySpeed: 2000,
-    arrow: false,
+    arrows: false,
     dots: true,
     responsive: [
       {

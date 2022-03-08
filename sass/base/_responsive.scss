@@ -2,7 +2,7 @@
 
 
     .header{
-
+        margin: 0;
 
         .page-setting{
             display: none;
@@ -48,24 +48,62 @@
 
 @media all and (max-width:1180px){
 
+
+    .banner{
+
+
+        .banner-left{
+            width: 100%;
+        }
+
+        .banner-right{
+            width: 100%;
+
+
+            .banner-col{
+                display:flex;
+                margin: 0 -15px;
+
+                .banner-child{
+                    width: 50%;
+                    padding: 0 15px;
+                    .banner-child-inner{
+
+                        height: 100%;
+
+                        img{
+                            width: 100%;
+                            
+                        }
+
+                    }
+                    .inner-2{
+                        position: relative;
+                        overflow: hidden;
+
+                        .img-2{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }   
+                    }
+                }
+            }
+
+        }
+    }
+
+
+
     .navbar-mobile{
         margin: 0;
+        transition: all 300ms;
     }
 
 
     .featured-items{
         width: 100%;
-        padding: 50px 16%;
-
-        .row_2{
-            grid-template-columns: repeat(3, minmax(0, 1fr));    
-            grid-gap: 15px;
-            .product{
-                @include col(81%);
-
-                
-            }
-        }
+        padding: 15px;
     }
     
     .footer{
@@ -99,28 +137,7 @@
 
 @media all and (max-width:1140px){
 
-    .banner{
 
-
-        &-left{
-            margin: 0 auto;
-            width: 100%;
-            padding: 0;
-            box-sizing: border-box;
-
-            img{
-                width: 100%;
-                object-fit: cover;
-            }
-        }
-
-
-        &-right{
-            display: none;
-
-        }
-
-    }
 
     
 }
@@ -130,11 +147,7 @@
     .featured-items{
         margin: 0 auto;
 
-        
-        .row_2{
-            grid-template-columns: repeat(2, minmax(0, 1fr));    
-           
-        }
+    
     }
 
 
@@ -174,12 +187,68 @@
             .navigation,
             .contact{
                 width: 70%;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin: 20px auto;
+
+                p{
+                    margin: 0 auto 30px auto;
+                }
+            }
+
+            .contact{
+                padding: 0;
+                
+
+                .contact-group{
+                    margin: 0 auto;
+                }
+            }
+
+            .navigation{
+                width: 50%
             }
         }
     }
 }
 
 @media all and (max-width:768px){
+
+    
+    .banner{
+
+
+        .banner-right{
+            width: 100%;
+            box-sizing: border-box;
+            .banner-col{
+                width: 100%;
+                display: block;
+                
+
+
+                .banner-child{
+                    width: 100%;
+                    
+
+                    .inner-2{
+                        position: unset;
+                        
+
+                        .img-2{
+                            position: unset;
+                            padding: 15px 0;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+
+
     .featured-items{
         display: flex;
         flex-direction: column;
@@ -188,12 +257,19 @@
         padding: 0 15px;
 
         
+        .products{
+            width: 100%;
+            .product{
+                width: 50%;
 
-
-        .row_2{
-            grid-template-columns: repeat(2, minmax(0, 1fr));    
-           
+                .product-img{
+                    width: 100%;
+                    
+                }
+            }
         }
+
+        
     }
 
     .slider{
@@ -227,9 +303,35 @@
 @media all and (max-width:576px){
     .featured-items{
 
-        .row_2{
-            grid-template-columns: repeat(1, minmax(0, 1fr));    
-           
+        .featured-items_group{
+
+            .products{
+    
+                .porduct{
+    
+                    .product-img {
+
+                        .btn-add-to-cart{
+                            @include button-primary($text-violet, $text-white, 94%);
+                        }
+    
+                        
+                    }
+                }
+            }
+        }
+        
+    }
+
+    .footer{
+        .footer-main{
+            .footer-main-group{
+                .about,
+                .navigation,
+                .contact{
+                    width: 80%;
+                }
+            }
         }
     }
 }

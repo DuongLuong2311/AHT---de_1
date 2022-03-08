@@ -3,23 +3,27 @@
     margin-bottom: 15px;
     box-sizing: border-box;
     width: 100%;
-
+    position:fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    
     
     .page-setting{
         display: flex;
         justify-content: space-between;
-        padding: 15px 15px;
+        padding: 15px;
         background-color: #222;
         color: $text-page-settings;
     
         .ps{
-            display: flex;
-            margin: 0 15px; 
             padding: 0 -15px;
+            display: flex;
             font-size: 0.875rem;
-    
+            
             .ps-config{
-                padding: 0 15px;
+                margin: 0 15px; 
+                font-size: 12px;
                 span{
                     margin: 0 5px;
                 }
@@ -32,11 +36,17 @@
     // Nav Bar
     .navbar{
         display: flex;
-        padding: 20px 15px; 
+        padding: 18px 15px; 
         align-items: center;
         justify-content: space-between;
         text-transform: uppercase;
-    
+        font-size: 14px;
+        background-color: $text-white;
+
+        .active{
+            color: $text-violet;
+        }
+
         img{
             margin: 0 15px;
         }
@@ -47,6 +57,7 @@
             padding: 0 -28.5px;
             padding-right: 72.5px;
             font-weight: 700;
+            margin: 0 10px;
             li{
                 margin: 0 28.5px;
             }

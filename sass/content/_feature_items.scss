@@ -1,59 +1,67 @@
-.featured-items{
-    padding:  43px 15px;
-    margin: -15px auto;
-    &_group {
-
-        .title{
-            @include title(5%);
-            margin: 0 0 12px 0 ;
-        }
+.featured-items {
+  padding: 0 15px;
+  margin: 0 auto;
+  &_group {
+    .title {
+      @include title(5%);
+      margin: 0 0 0px 0;
     }
+  }
 }
 
-.product{
-    @include col(274px);
-    &_img{
-        position: relative;
-        margin: 0 0 15px 0;
-        .btn-add-to-cart{
-            @include button-primary($text-white, $btn-atc, 118px );
-            position: absolute;
-            bottom: 9px;
-            left: 5px;
-            &:hover{
-                color: $text-violet;
-            }
-            
+.products {
+    margin: 58px 0;
+    
+  .product {
+    @include col(25%);
+    margin: 20px 0;
+    
+    .product_img {
+      padding-top: calc(323 / 262 * 100%);
+      position: relative;
+
+      .btn-add-to-cart {
+        @include button-primary($text-white, $btn-atc, 44.953%);
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        &:hover {
+          color: $text-violet;
         }
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        object-fit: cover;
+      }
     }
 
-    &-name{
-        margin: 5px 0;
+    &-name {
+      margin: 13px 0;
+      font-weight: 700;
+    }
+
+    .rating {
+      margin: 5px 0;
+      color: #d1d1d1;
+      .checked {
+        color: #f8ba04;
+      }
+    }
+
+    .price {
+      &-current {
+        text-decoration: line-through;
+        color: $text-price;
+      }
+
+      &-sale {
+        color: $text-violet;
         font-weight: 700;
-        
+      }
     }
-
-
-
-    .rating{
-        margin: 5px 0;
-        color: #d1d1d1;
-        .checked{
-            color: #f8ba04;
-
-        }
-    }
- 
-    .price{
-
-        &-current{
-            text-decoration: line-through;
-            color: $text-price;
-        }
-
-        &-sale{
-            color: $text-violet;
-            font-weight: 700;
-        }
-    }
+  }
 }
