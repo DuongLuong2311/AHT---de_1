@@ -4,6 +4,7 @@
     padding-top: 35px;
     overflow: hidden;
     box-sizing: border-box;
+    
 
     &:after {
         content : "";
@@ -40,8 +41,8 @@
                             
                             background-color: $text-violet;
                             border-radius: 50%;
-                            width:7px;
-                            height: 7px;
+                            width: 13px;
+                            height: 13px;
     
                         }
                     }
@@ -50,13 +51,16 @@
             }
     
             .slick-list {
+                height: 90%;
             }
     
             .slider-item{
                 background-color: $text-white; 
-                @include col(auto);
+                @include col(33);
                 padding: 0;
+                height: 390px;
                 margin: 0 15px;
+                font-size: 14px;
 
                 .news-img{
                     position: relative;
@@ -71,7 +75,7 @@
                         padding: 5px;
                         top: 0;
                         margin: 22px 20px;
-                        background-color: #a1d1dd;
+                        background-color: $bg-date-box;
     
                         .date{
                             width: 50px;

@@ -46,9 +46,9 @@
 
     .rating {
       margin: 5px 0;
-      color: #d1d1d1;
+      color: $text-rating;
       .checked {
-        color: #f8ba04;
+        color: $text-rating-checked;
       }
     }
 

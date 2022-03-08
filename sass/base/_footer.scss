@@ -5,7 +5,7 @@
     color: $text-gray-2;
     box-sizing: border-box;
     overflow: hidden;
-
+    height: 40vh;
     
     
     &-main{
@@ -34,7 +34,7 @@
                 margin: 10px 18px;
                 p{
 
-                    font-family: 'Open Sans';
+                    font-family: $font-open-sans;                    
                     width: 77%;
                     border-top: 1px solid #393939;
                     margin: 30px 0 50px 0;
