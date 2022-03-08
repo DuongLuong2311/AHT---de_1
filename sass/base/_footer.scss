@@ -123,21 +123,25 @@
         border-top: 1px solid #393939;
 
 
-        .row{
-            justify-content: space-between;
+        .container{
 
-            span{
-                font-size: 14px;
-            }
+            padding: 30px 0 28px 0;
 
-            .payment{
-                font-size: 21px;
-
-                .payment-icon{
-                    margin: 2px;
+            .row{
+                justify-content: space-between;
+                span{
+                    font-size: 14px;
                 }
+    
+                .payment{
+                    font-size: 21px;
+    
+                    .payment-icon{
+                        margin: 2px;
+                    }
+                }
+    
             }
-
         }
     }
 }

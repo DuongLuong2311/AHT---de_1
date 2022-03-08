@@ -366,16 +366,19 @@ p {
   padding: 0 0;
   border-top: 1px solid #393939;
 }
-.footer-copyright .row {
+.footer-copyright .container {
+  padding: 30px 0 28px 0;
+}
+.footer-copyright .container .row {
   justify-content: space-between;
 }
-.footer-copyright .row span {
+.footer-copyright .container .row span {
   font-size: 14px;
 }
-.footer-copyright .row .payment {
+.footer-copyright .container .row .payment {
   font-size: 21px;
 }
-.footer-copyright .row .payment .payment-icon {
+.footer-copyright .container .row .payment .payment-icon {
   margin: 2px;
 }
 
