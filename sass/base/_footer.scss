@@ -79,11 +79,11 @@
           li {
             display: flex;
             margin: 4px 0 -2px 0;
-            align-items: center;
+            align-items: flex-start	;
 
             .info-icon {
               margin-left: 5px;
-              align-self: start;
+              padding: 10px 0 0 0;
             }
 
             .info {
