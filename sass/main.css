@@ -612,6 +612,9 @@ p {
   z-index: -1;
   left: 47.75%;
 }
+.news .title h4 {
+  margin: 0 0 10px -6px;
+}
 .news .container {
   padding: 0;
 }
