@@ -9,7 +9,6 @@
   }
 }
 
-
 //Button
 @mixin btn($bg-color, $text-color) {
   width: 118px;
@@ -18,9 +17,8 @@
   color: $text-color;
 }
 
-
 //Title
-@mixin title($hr-width) {
+@mixin title($hr-width, $left) {
   position: relative;
   h4 {
     margin: 0 0 10px 0;
@@ -41,10 +39,10 @@
     width: $hr-width;
     content: "";
     position: absolute;
-    bottom: -30px;
-
+    bottom: -25px;
     border-top: 2px solid $text-violet;
     z-index: -1;
+    left: $left;  
   }
 }
 

@@ -1,69 +1,65 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat';
-    font-size: 16px;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  font-size: 16px;
 }
 
-a{
-    color: #000000;
-    text-decoration: none;
+a {
+  color: $text-black;
+  text-decoration: none;
 
-    &:hover{
-        color:#000000;
-    }
+  &:hover {
+    color: $text-black;
+  }
 }
 
-ul{
-    margin: 0;
-    padding: 0;
-    li{
-        list-style: none;
-    }
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+  }
 }
 
 h1,
 h2,
 h3,
 h4,
-p{
-    margin: 0;
-    padding: 0;
+p {
+  margin: 0;
+  padding: 0;
 }
 
-
-.container{
-    max-width: 1170px;
-    width: 100%;
-    padding:15px;
-    margin: auto;
-    box-sizing: border-box;
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 15px;
+  margin: auto;
+  box-sizing: border-box;
 }
 
-
-.container-fruid{
-    width: 100%;
-    padding: 0 15px;
-    box-sizing: border-box;
+.container-fruid {
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
-.row-header{
-    display: flex;
-    justify-content:space-between;
-    margin: 0 ;
+.row-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
 }
 
-
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -15px;
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
 }
 
-
-.row_2{
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));    
-    margin: 0 -15px;
+.row_2 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0 -15px;
 }

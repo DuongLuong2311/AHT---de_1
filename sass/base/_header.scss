@@ -1,181 +1,166 @@
-// Header - Page Settings 
-.header{
-    margin-bottom: 15px;
-    box-sizing: border-box;
-    width: 100%;
-    position:fixed;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    
-    
-    .page-setting{
-        display: flex;
-        justify-content: space-between;
-        padding: 15px;
-        background-color: #222;
-        color: $text-page-settings;
-    
-        .ps{
-            padding: 0 -15px;
-            display: flex;
-            font-size: 0.875rem;
-            
-            .ps-config{
-                margin: 0 15px; 
-                font-size: 12px;
-                span{
-                    margin: 0 5px;
-                }
-            }
+// Header - Page Settings
+.header {
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+
+  .page-setting {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: $text-gray-3;
+    color: $text-page-settings;
+
+    .ps {
+      padding: 0 -15px;
+      display: flex;
+      font-size: 14px;
+
+      .ps-config {
+        margin: 0 15px;
+        font-size: 13px;
+        span {
+          margin: 0 5px;
         }
+      }
     }
-    
-    
-    
-    // Nav Bar
-    .navbar{
-        display: flex;
-        padding: 18px 15px; 
-        align-items: center;
-        justify-content: space-between;
-        text-transform: uppercase;
-        font-size: 14px;
-        background-color: $text-white;
+  }
 
-        .active{
-            color: $text-violet;
+  // Nav Bar
+  .navbar {
+    display: flex;
+    padding: 18px 15px;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: $text-white;
+
+    .active {
+      color: $text-violet;
+    }
+
+    img {
+      margin: 0 15px;
+    }
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      padding: 0 95.5px 0 0;
+      font-weight: 700;
+      margin: 0 10px;
+      li {
+        margin: 0 28.5px;
+      }
+    }
+
+    .control-items {
+      padding: -15px;
+      margin: 6px 15px;
+
+      a {
+        margin: 0 0 0 17px;
+
+        i{
+          font-size: 32px;
+
         }
+      }
+    }
 
-        img{
-            margin: 0 15px;
-        }
-    
-        .nav-link{
-            display: flex;
-            align-items: center;
-            padding: 0 -28.5px;
-            padding-right: 72.5px;
-            font-weight: 700;
-            margin: 0 10px;
-            li{
-                margin: 0 28.5px;
-            }
-        }
-    
-        .control-items{
-            padding: -15px;
-            margin: 0 15px;
+    .nav-hamburger {
+      display: none;
 
-            a{
-                margin: 15px;
-                font-size: 27px;
-            }
-        }
-
-
-        .nav-hamburger{
-            display:none;
-            
-            .search{
-                margin: 0 20px;
-            }
-        }
-
+      .search {
+        margin: 0 20px;
+      }
+    }
 
     // Mobile
-    .navbar-mobile{
-        display: none;
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background-color: $text-white;
-        top: 0;
-        z-index: 1000;
-        padding: 10% 0;
-        @include transformer(translateX(100%));
-        animation: navbar 1s fade in both ;
-        box-sizing: border-box;
-        box-shadow : -20px -7px 6px -2px #fff;
+    .navbar-mobile {
+      display: none;
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-color: $text-white;
+      top: 0;
+      z-index: 1000;
+      padding: 10% 0;
+      @include transformer(translateX(100%));
+      animation: navbar 1s fade in both;
+      box-sizing: border-box;
+      box-shadow: -20px -7px 6px -2px $text-white;
 
-        .navbar-mobile-content{
-            margin: 0 auto;
-            width: 70%;
+      .navbar-mobile-content {
+        margin: 0 auto;
+        width: 70%;
 
-            .navbar-mobile_menu{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
+        .navbar-mobile_menu {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
 
-                img{
-                    
-                }
+          img {
+          }
 
-                .exit{
-                    font-size: 30px;
-                }
-            }
-
-
-
-            .navbar-mobile_link{
-                font-size: 16px;
-                text-transform: uppercase;
-                font-weight: 700;
-                text-align: center;
-                margin: 50px 0;
-                
-
-                li{
-                    width: 100%;
-                    padding: 10px 0;
-
-                    &:hover{
-                        background-color: $text-black;
-                        
-                        a{
-                            color: #fff;
-                        }
-                    }
-                }
-            }
-
-            .control-items-mobile{
-                text-align: center;
-                margin: 30px auto;
-                font-size: 35px;
-            }
-
-            .config-mobile{
-                display: flex;
-                margin: 0 -15px;
-                justify-content: space-between;
-                margin:  10% 0 0 0;
-
-
-                .bookmark{
-                    span{
-                        margin: 0 10px;
-                        font-weight: 600;
-                    }
-                }
-
-                .settings{
-
-                    a{
-                        cursor: pointer;
-                        margin: 0 0 0 10px;
-                    }
-                }
-            }
+          .exit {
+            font-size: 30px;
+          }
         }
 
-        
+        .navbar-mobile_link {
+          font-size: 16px;
+          text-transform: uppercase;
+          font-weight: 700;
+          text-align: center;
+          margin: 50px 0;
 
+          li {
+            width: 100%;
+            padding: 10px 0;
 
+            &:hover {
+              background-color: $text-black;
+
+              a {
+                color: $text-white;
+              }
+            }
+          }
+        }
+
+        .control-items-mobile {
+          text-align: center;
+          margin: 30px auto;
+          font-size: 35px;
+        }
+
+        .config-mobile {
+          display: flex;
+          margin: 0 -15px;
+          justify-content: space-between;
+          margin: 10% 0 0 0;
+
+          .bookmark {
+            span {
+              margin: 0 10px;
+              font-weight: 600;
+            }
+          }
+
+          .settings {
+            a {
+              cursor: pointer;
+              margin: 0 0 0 10px;
+            }
+          }
+        }
+      }
     }
-        
-    }
-
-    
+  }
 }

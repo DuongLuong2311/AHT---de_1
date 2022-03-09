@@ -1,88 +1,79 @@
-.banner{
-    margin: 126px 0 36px 0;
-    .banner-col{
-        margin: -15px 0;
+.banner {
+  margin: 125px 0 36px 0;
+  .banner-col {
+    margin: -15px 0;
+  }
+
+  &-left {
+    @include col(66.66%);
+    position: relative;
+
+    .banner-left-content {
+      position: absolute;
+      right: 13.75%;
+      bottom: 28.7%;
+
+      p {
+        font-size: 30px;
+        font-family: "Pacifico";
+        font-weight: 700;
+        margin: 0 0 1px 0;
+      }
+
+      .btn-link {
+        margin: 0 0 0 65.6%;
+      }
     }
+  }
 
-    &-left{
-        @include col(66.66%);
-        position: relative;
+  &-right {
+    @include col(33.33%);
 
+    .banner-child {
+      padding: 15px 0;
+      position: relative;
 
-        .banner-left-content{
-            position: absolute;
-            right: 12.75%;
-            bottom: 28%;
+      .banner-right-content_1 {
+        position: absolute;
+        top: 43.4%;
+        left: 15%;
 
-
-            p{
-                font-size:30px;
-                font-family: 'Pacifico';
-                font-weight: 700;
-            }
-
-            .btn-link{
-                margin: 0 0 0 65%;
-            }
-
-        }
-    }
-
-    &-right{
-        @include col(33.33%);
-
-        .banner-child{
-            padding: 15px 0;
-            position: relative;
-
-
-            .banner-right-content_1{
-                position: absolute;
-                top: 45%;
-                left: 15%;
-
-                span{
-                    text-transform: uppercase;
-                    color: #616161;
-                    letter-spacing: 3px;
-                    font-weight: 500;
-                }
-
-                p{
-                    text-transform: uppercase;
-                    font-size: 20px;
-                    font-weight: 700;
-                }
-
-            }
-            .banner-right-content_2{
-                position:absolute;
-                top: 37.5%;
-                left: 11%;
-                span{
-                    text-transform: uppercase;
-                    color: #616161;
-                    letter-spacing: 3px;
-                    font-weight: 500;
-                }
-
-                p{
-                    text-transform: uppercase;
-                    font-size: 20px;
-                    font-weight: 700;
-                    margin: 0 0 13px 0;
-                }
-
-                
-            }
+        span {
+          text-transform: uppercase;
+          color: $text-gray-4;
+          letter-spacing: 3px;
+          font-weight: 500;
         }
 
+        p {
+          text-transform: uppercase;
+          font-size: 20px;
+          font-weight: 700;
+        }
+      }
+      .banner-right-content_2 {
+        position: absolute;
+        top: 36.5%;
+        left: 11%;
+        span {
+          text-transform: uppercase;
+          color: $text-gray-4;
+          letter-spacing: 3px;
+          font-weight: 500;
+        }
+
+        p {
+          text-transform: uppercase;
+          font-size: 20px;
+          font-weight: 700;
+          margin: 0 0 13px 0;
+        }
+      }
     }
+  }
 }
 
-
-
-.btn-link{
-    @include button-primary($text-violet, $text-white, 106px);
-    padding: 11px 18px;
+.btn-link {
+  @include button-primary($text-violet, $text-white, 106px);
+  padding: 11px 18px;
 }
