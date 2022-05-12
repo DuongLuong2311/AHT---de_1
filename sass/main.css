@@ -955,6 +955,9 @@ p {
   .header .page-setting {
     display: none;
   }
+  .header .navbar .logo {
+    margin: 0;
+  }
   .header .navbar .nav-link {
     display: none;
   }
